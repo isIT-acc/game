@@ -1,0 +1,104 @@
+/* * {
+  margin: 0;
+} */
+.game {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.game_background_black {
+  background-color: black;
+}
+
+.game-field {
+  max-width: 480px;
+  height: 740px;
+  /* position: relative; */
+}
+
+.game-field_centered {
+  margin: auto;
+}
+
+.game-field__image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.game-field__image_image_cemetry {
+  background-image: url("./imgs/cemetery.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.game-field__top-sep {
+  position: absolute;
+  top: 0.5%;
+  width: 100%;
+}
+.game-field__bottom-sep {
+  position: absolute;
+  bottom: 9%;
+  width: 100%;
+}
+.game-field__battlefield-head-hp-bg {
+  position: absolute;
+  top: 3.5%;
+  left: 15%;
+  width: 74%;
+}
+
+.left-player {
+  width: 77px;
+  position: relative;
+  /* height: 100px; */
+}
+
+.left-player__battlefield-head-ava-bg {
+  width: 100%;
+}
+.left-player__battlefield-head-ava-bg_positioned {
+  position: absolute;
+  top: 0px;
+}
+.left-player__ava {
+  position: absolute;
+  border-radius: 50%;
+  left: 11px;
+  top: 8px;
+  opacity: 0.7;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.63);
+}
+.left-player__level {
+  position: absolute;
+  top: 69px;
+  left: 35px;
+}
+.left-player__level_font {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(187, 182, 182);
+}
+
+.left-player__hp-line {
+  background-color: #8a0000;
+  width: 146px;
+  height: 12px;
+  position: absolute;
+  top: 37px;
+  left: 73px;
+  border-bottom-right-radius: 50px;
+}
+.left-player__hp-line-text {
+  color: yellow;
+  position: absolute;
+  bottom: -3px;
+}
+.left-player__hp-line-text_font {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  /* font-weight: bold; */
+}
