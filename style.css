@@ -329,7 +329,7 @@
   /* background: yellow; */
 }
 .unit-image_change-to-red-zombie {
-  animation: bg-image-sit steps(2) 600ms;
+  animation: bg-image-sit steps(2) 300ms;
   /* to-red-zombie 1s, */
 }
 
