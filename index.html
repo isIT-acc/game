@@ -8,25 +8,103 @@
   </head>
   <body class="game game_background_black">
     <div class="game-field game-field_centered">
-      <div class="game-field__image game-field__image_image_cemetry">
-        <img src="./imgs/battlefield-sep-bg.png" class="game-field__top-sep"></img>
+      <div class="game-field__env game-field__env_font_default">
+        <img
+          src="./imgs/battlefield-sep-bg.png"
+          class="separator separator_positioned_top separator_centered"
+        />
+        <div class="border border_positioned_left"></div>
 
-        <img src="./imgs/battlefield-head-hp-bg.png" class="game-field__battlefield-head-hp-bg">
-        <div class="left-player">
-          <img src="./imgs/battlefield-head-ava-bg.png" class="left-player__battlefield-head-ava-bg left-player__battlefield-head-ava-bg_positioned">
-          <img src="./imgs/ava.jpg" class="left-player__ava">
-          <span class="left-player__level left-player__level_font">1</span>
-          <div class="left-player__hp-line">
-            <span class="left-player__hp-line-text left-player__hp-line-text_font">100&nbsp;/&nbsp;100</span>
-          </div>  
+        <img
+          src="./imgs/battlefield-head-hp-bg.png"
+          class="game-field__battlefield-head-hp-bg game-field__battlefield-head-hp-bg-positioned"
+        />
+
+        <div class="left-player left-player_positioned">
+          <div class="player-bg left-player__player-bg">
+            <span class="player-level player-bg__player-level">1</span>
+          </div>
+          <div class="player-ava left-player__player-ava"></div>
+          <div
+            class="hp-line hp-line_color_red hp-line_width_l hp-line_form_left left-player__hp-line"
+          >
+            <span
+              class="hp-line__text hp-line__text_position_left hp-line__text_font_default"
+              >100&nbsp;/&nbsp;100</span
+            >
+          </div>
+          <div
+            class="player-name player-name_font_default left-player__player-name"
+          >
+            Lord Byron
+          </div>
         </div>
-        <div class="right-player">
 
-
+        <div class="right-player right-player_positioned">
+          <div class="player-bg right-player__player-bg">
+            <span class="player-level player-bg__player-level">1</span>
+          </div>
+          <div class="player-ava right-player__player-ava"></div>
+          <div
+            class="hp-line hp-line_color_red hp-line_form_right hp-line_width_medium right-player__hp-line"
+          >
+            <span
+              class="hp-line__text hp-line__text_position_right hp-line__text_font_default"
+              >100&nbsp;/&nbsp;100</span
+            >
+          </div>
+          <div
+            class="player-name player-name_font_default right-player__player-name"
+          >
+            Маг Сириус
+          </div>
         </div>
-        <div class="lor"></div>
-        <img src="./imgs/battlefield-sep-bg.png" class="game-field__bottom-sep"></img>
+        <div class="lor lor_positioned lor_font_default">
+          В подземелье ты обратил на себя гнев опального мага... Пусть победит
+          сильнейший!
+        </div>
+
+
+        <div class="attack-button attack-button_positioned">
+          <span class="attack-button__hp-number attack-button__hp-number_font_default attack-button__hp-number_positioned">50</span>
+        </div>
+        <div class="skills-button skills-button_positioned"></div>
+        <div class="border border_positioned_right"></div>
+        
+        <img
+          src="./imgs/battlefield-sep-bg.png"
+          class="separator separator_positioned_bottom separator_centered"
+        />
+      </div>
+
+
+
+      <div class="game-field__image game-field__image_location_cemetry">
+        <div class="unit unit_positioned_left">
+          <div class="unit-image unit-image_type_thief unit__unit-image"></div>
+          <div class="unit-hp-bar unit-hp-bar_positioned unit-hp-bar_left">
+            <span
+              class="unit-hp-bar__filling unit-hp-bar__filling_positioned"
+            ></span>
+          </div>
+          <div class="unit-bg unit__unit-bg unit__unit-bg_left unit-bg_yellow"></div>
+        </div>
+        <div class="unit unit_positioned_right">
+          <div class="unit-image unit-image_type_zombie unit__unit-image">
+            <div class="unit-image__shleves"></div>
+            <div class="red-cloud unit-image__red-cloud"></div>
+            <div class="unit-hp-bar unit-hp-bar_positioned unit-hp-bar_right">
+              <span
+                class="unit-hp-bar__filling unit-hp-bar__filling_positioned"
+              ></span>
+            </div>
+          </div>
+
+          
+
+          <div class="unit-bg unit__unit-bg unit__unit-bg_right unit-bg_red"></div>
       </div>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>

@@ -1,6 +1,4 @@
-/* * {
-  margin: 0;
-} */
+/* game */
 .game {
   width: 100%;
   height: 100vh;
@@ -11,11 +9,14 @@
 .game_background_black {
   background-color: black;
 }
+/* game */
+
+/* game-field */
 
 .game-field {
-  max-width: 480px;
+  max-width: 680px;
   height: 740px;
-  /* position: relative; */
+  position: relative;
 }
 
 .game-field_centered {
@@ -24,73 +25,89 @@
 
 .game-field__image {
   width: 100%;
-  height: 100%;
-  position: relative;
+  padding-top: 100%;
+  position: absolute;
 }
-.game-field__image_image_cemetry {
+
+.game-field__image_location_cemetry {
   background-image: url("./imgs/cemetery.jpg");
   background-position: top;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
-.game-field__top-sep {
-  position: absolute;
-  top: 0.5%;
-  width: 100%;
+.separator {
+  width: 70%;
 }
-.game-field__bottom-sep {
+.separator_positioned_bottom {
   position: absolute;
-  bottom: 9%;
-  width: 100%;
+  bottom: 8%;
 }
+.separator_positioned_top {
+  position: absolute;
+  top: 0.1%;
+}
+.separator_centered {
+  left: 14.7%;
+}
+
 .game-field__battlefield-head-hp-bg {
-  position: absolute;
-  top: 3.5%;
-  left: 15%;
-  width: 74%;
+  width: 53%;
 }
+.game-field__battlefield-head-hp-bg-positioned {
+  position: absolute;
+  top: 3.2%;
+  left: 25%;
+}
+
+.right-player_positioned {
+  position: absolute;
+  right: 14.8%;
+  top: 0;
+}
+
+.game-field__env_positioned_left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.game-field__env_positioned_right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.game-field__border {
+  height: 100%;
+  width: 14.7%;
+  background-color: rgb(245, 7, 7);
+}
+
+/* game-field */
+
+/* left-player */
 
 .left-player {
-  width: 77px;
-  position: relative;
-  /* height: 100px; */
+  width: 35.2%;
+  height: 13%;
+}
+.left-player_positioned {
+  position: absolute;
+  top: 0;
+  left: 14.8%;
 }
 
-.left-player__battlefield-head-ava-bg {
-  width: 100%;
-}
-.left-player__battlefield-head-ava-bg_positioned {
+.left-player__player-ava {
   position: absolute;
-  top: 0px;
-}
-.left-player__ava {
-  position: absolute;
-  border-radius: 50%;
-  left: 11px;
-  top: 8px;
-  opacity: 0.7;
-  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.63);
-}
-.left-player__level {
-  position: absolute;
-  top: 69px;
-  left: 35px;
-}
-.left-player__level_font {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  color: rgb(187, 182, 182);
+  left: 4%;
+  top: 10%;
+  z-index: 99;
 }
 
 .left-player__hp-line {
-  background-color: #8a0000;
-  width: 146px;
-  height: 12px;
   position: absolute;
-  top: 37px;
-  left: 73px;
-  border-bottom-right-radius: 50px;
+  top: 36%;
+  left: 29.5%;
 }
 .left-player__hp-line-text {
   color: yellow;
@@ -100,5 +117,468 @@
 .left-player__hp-line-text_font {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
-  /* font-weight: bold; */
+}
+.left-player__player-name {
+  position: absolute;
+  top: 11%;
+  left: 28%;
+}
+
+.left-player__player-bg {
+  position: absolute;
+  z-index: 100;
+  top: 6%;
+  left: -1.5%;
+}
+
+/* left-player */
+
+/* hp-line */
+.hp-line {
+  /* width: 146px;
+  height: 14px; */
+  width: 55%;
+  height: 13.8%;
+}
+.hp-line_width_l {
+  width: 62%;
+}
+.hp-line_width_m {
+  width: 133px;
+}
+.hp-line_color_red {
+  background-color: #8a0000;
+}
+.hp-line_form_left {
+  border-bottom-right-radius: 50px;
+}
+.hp-line_form_right {
+  border-bottom-left-radius: 50px;
+}
+
+.hp-line__text {
+  color: yellow;
+}
+.hp-line__text_position_left {
+  position: absolute;
+  bottom: -15.5%;
+  left: -1%;
+}
+.hp-line__text_position_right {
+  position: absolute;
+  right: 4%;
+  bottom: -10.5%;
+}
+.hp-line__text_font_default {
+  font-size: 14px;
+}
+
+/* hp-line */
+
+/* player-bg */
+.player-bg {
+  width: 32%;
+  padding-top: 37%;
+  background-image: url("./imgs/battlefield-head-ava-bg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.player-bg__player-level {
+  position: absolute;
+  top: 79%;
+  left: 46%;
+  z-index: 100;
+}
+/* player-bg */
+
+.player-ava {
+  width: 22%;
+  height: 63%;
+  border-radius: 50%;
+  background-image: url("./imgs/ava.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.player-level {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(187, 182, 182);
+}
+/* player-name */
+.player-name {
+  color: #626262;
+  width: 62.5%;
+}
+.player-name_font_default {
+  font-size: 15px;
+}
+/* player-name */
+
+/* right-player */
+
+.right-player {
+  width: 35.2%;
+  height: 13.6%;
+}
+
+.right-player__player-bg {
+  right: -1%;
+  position: absolute;
+  z-index: 100;
+  top: 5%;
+}
+.right-player__player-ava {
+  top: 9.5%;
+  right: 2.5%;
+  position: absolute;
+  z-index: 99;
+}
+
+.right-player__hp-line {
+  position: absolute;
+  top: 34%;
+  right: 28%;
+  z-index: 99;
+}
+.right-player__player-name {
+  position: absolute;
+  top: 11%;
+  right: 0%;
+}
+
+/* right-player */
+
+/* lor */
+.lor {
+  width: 46%;
+  height: 5%;
+  color: #aeaeae;
+  text-align: center;
+  letter-spacing: 0.0001em;
+}
+
+.lor_positioned {
+  position: absolute;
+  top: 10.3%;
+  left: 27.5%;
+}
+
+.lor_font_default {
+  font-size: 14px;
+}
+
+/* lor */
+
+/* UI */
+.game-field__env {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  padding-top: 108%;
+  margin: auto;
+  z-index: 101;
+}
+.game-field__env_font_default {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.border {
+  height: 100%;
+  width: 14.7%;
+  background-color: black;
+}
+.border_positioned_left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.border_positioned_right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* UI */
+
+/* thief-unit block */
+
+.unit {
+  width: 36.4%;
+  /* height:205px(27.7%) */
+  height: 27.7%;
+  /* background: red; */
+}
+
+.unit_positioned_left {
+  position: absolute;
+  top: 30.8%;
+  left: 14.8%;
+}
+.unit_positioned_right {
+  position: absolute;
+  top: 15.2%;
+  right: 19.2%;
+}
+
+.unit-image {
+  height: 100%;
+  width: 100%;
+  /* transition: background-image 1s; */
+  /* background: yellow; */
+}
+.unit-image_change-to-red-zombie {
+  animation: bg-image-sit steps(2) 600ms;
+  /* to-red-zombie 1s, */
+}
+
+/* @keyframes to-red-zombie {
+  from {
+    background-image: url("./imgs/zombie.png");
+  }
+  to {
+    background-image: url("./imgs/zombie-rage.png");
+  }
+} */
+@keyframes bg-image-sit {
+  from {
+    background-position: 0 60%;
+  }
+  to {
+    background-position: 0 60%;
+  }
+}
+
+.unit-image_attacks {
+  /* background: yellow; */
+  animation: zombie-attacks-frames 600ms steps(2);
+}
+.unit-image__shleves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.unit-image__shleves_play {
+  background: url("./imgs/zombie.png");
+  background-size: 100%;
+  animation: zombie-attacks-shleves 600ms steps(2);
+}
+
+@keyframes zombie-attacks-frames {
+  from {
+    background-position: 0 20%;
+  }
+  to {
+    background-position: 0 60%;
+  }
+}
+
+@keyframes zombie-attacks-shleves {
+  from {
+    background-position: 0 80%;
+  }
+  to {
+    background-position: 0 120%;
+  }
+}
+
+.unit-image_type_thief {
+  background-image: url("./imgs/thief.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.unit-image_type_zombie {
+  background-image: url("./imgs/zombie.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.unit-image_type_red-zombie {
+  background-image: url("./imgs/zombie-rage.png");
+}
+
+.unit__unit-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.unit-current-bg {
+  width: 106px;
+  height: 64px;
+}
+.unit-hp-bar {
+  width: 18.5%;
+  height: 3.2%;
+  border: 1px solid green;
+  background-color: black;
+  z-index: 99;
+  /* border: */
+}
+.unit-hp-bar_positioned {
+  position: absolute;
+}
+.unit-hp-bar_left {
+  bottom: -1.9%;
+  left: 31%;
+}
+.unit-hp-bar_right {
+  bottom: -1.9%;
+  right: 30%;
+}
+.unit-hp-bar__filling {
+  width: 97%;
+  height: 67%;
+  background-color: #0d8900;
+  border: 1px solid black;
+}
+.unit-hp-bar__filling_positioned {
+  position: absolute;
+  top: 0%;
+  /* left: 0%; */
+  left: -1%;
+}
+
+.unit-bg {
+  /* width 106px, width of conteiner: 248px; */
+  width: 42.7%;
+  /* 64 px */
+  height: 31.2%;
+  /* background: yellow; */
+  background-image: url("./imgs/unit-current-bg.png");
+  background-size: 100%;
+}
+.unit-bg_red {
+  background-position: 0 100%;
+}
+.unit-bg_yellow {
+  background-position: 0 200%;
+}
+.unit__unit-bg {
+  position: absolute;
+}
+.unit__unit-bg_right {
+  bottom: -4.8%;
+  right: 19.8%;
+}
+.unit__unit-bg_left {
+  bottom: -7.8%;
+  left: 19%;
+}
+/* thief-unit block */
+
+.attack-button {
+  /* width:122px
+  height:131px */
+  width: 17.9%;
+  height: 17.7%;
+  background-image: url("./imgs/atack-button-bg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.attack-button_positioned {
+  position: absolute;
+  z-index: 100;
+  bottom: 18.3%;
+  right: 14.5%;
+}
+
+.attack-button_pressed {
+  background-position: 0 99%;
+}
+
+.attack-button__hp-number {
+  color: white;
+}
+.attack-button__hp-number_pressed {
+  color: #aeaeae;
+}
+.attack-button__hp-number_positioned {
+  position: absolute;
+  left: 47%;
+  bottom: 40%;
+}
+.attack-button__hp-number_font_default {
+  font-size: 15px;
+}
+.skills-button {
+  /* width: 68px;
+  height:68px; */
+  width: 10%;
+  height: 9.2%;
+  background-image: url("./imgs/skills.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 30.3%;
+}
+.skills-button_positioned {
+  position: absolute;
+  z-index: 100;
+  bottom: 18.5%;
+  right: 31%;
+}
+.skills-button_activated {
+  background-position: 0 33.3%;
+}
+
+/* red cloud */
+.red-cloud {
+  position: absolute;
+  width: 100%;
+  height: 143%;
+  background-image: url("./imgs/effect-rage.png");
+  background-repeat: no-repeat;
+  background-size: 77%;
+  background-position: 50% 50%;
+  transform: scaleY(0.41) translateY(91%);
+  opacity: 0;
+  /* transition: transform 1s; */
+}
+
+.unit-image__red-cloud {
+  bottom: -0.5%;
+  left: 11%;
+}
+
+.red-cloud_animation-played {
+  animation: red-cloud-scales 1s;
+}
+@keyframes red-cloud-scales {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    transform: scaleY(0.82) translateY(15%);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(0.82) translateY(15%);
+    opacity: 0;
+  }
+}
+/* red cloud */
+
+@media screen and (max-width: 680px) {
+  .player-level {
+    font-size: 1.7vw;
+  }
+  .hp-line__text_font_default {
+    font-size: 2.1vw;
+  }
+  .player-name_font_default {
+    font-size: 2.2vw;
+  }
+
+  .lor_font_default {
+    font-size: 2.1vw;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 2.2vw;
+  }
 }
