@@ -186,11 +186,8 @@ function addRedZombieAnimationListener() {
 
 function main() {
   addRedZombieAnimationListener();
-
   addRedCloudAnimationListener();
-
   enableAttackButton();
-
   enableSkillButton();
 }
 
