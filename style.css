@@ -71,10 +71,6 @@
   right: 0;
 }
 
-/* game-field */
-
-/* left-player */
-
 .left-player {
   width: 35.2%;
   height: 13%;
@@ -115,10 +111,7 @@
   left: -1.5%;
 }
 
-/* head-hp-line */
 .head-hp-line {
-  /* width: 146px;
-  height: 14px; */
   width: 55%;
   height: 13.8%;
 }
@@ -155,9 +148,6 @@
   font-size: 14px;
 }
 
-/* head-hp-line */
-
-/* player-bg */
 .player-bg {
   width: 32%;
   padding-top: 37%;
@@ -172,7 +162,6 @@
   left: 46%;
   z-index: 100;
 }
-/* player-bg */
 
 .player-ava {
   width: 22%;
@@ -189,7 +178,6 @@
   font-weight: bold;
   color: rgb(187, 182, 182);
 }
-/* player-name */
 .player-name {
   color: #626262;
   width: 62.5%;
@@ -197,9 +185,6 @@
 .player-name_font_default {
   font-size: 15px;
 }
-/* player-name */
-
-/* right-player */
 
 .right-player {
   width: 35.2%;
@@ -231,9 +216,6 @@
   right: 0%;
 }
 
-/* right-player */
-
-/* lor */
 .lor {
   width: 46%;
   height: 5%;
@@ -252,9 +234,6 @@
   font-size: 14px;
 }
 
-/* lor */
-
-/* UI */
 .game-field__UI {
   background-color: transparent;
   position: absolute;
@@ -282,15 +261,10 @@
   right: 0;
 }
 
-/* UI */
-
-/* thief-unit block */
-
 .unit {
   width: 36.4%;
   /* height:205px(27.7%) */
   height: 27.7%;
-  /* background: red; */
 }
 
 .unit_positioned_left {
@@ -307,12 +281,9 @@
 .unit-image {
   height: 100%;
   width: 100%;
-  /* transition: background-image 1s; */
-  /* background: yellow; */
 }
-.unit-image_change-to-red-zombie {
+.unit-image_sitting {
   animation: bg-image-sit steps(2) 300ms;
-  /* to-red-zombie 1s, */
 }
 
 @keyframes bg-image-sit {
@@ -391,7 +362,6 @@
   border: 1px solid green;
   background-color: black;
   z-index: 99;
-  /* border: */
 }
 .unit-hp-bar_positioned {
   position: absolute;
@@ -413,16 +383,13 @@
 .unit-hp-bar__filling_positioned {
   position: absolute;
   top: 0%;
-  /* left: 0%; */
   left: -1%;
 }
 
 .unit-bg {
-  /* width 106px, width of conteiner: 248px; */
+  /* width 106px, width of container: 248px; */
   width: 42.7%;
-  /* 64 px */
   height: 31.2%;
-  /* background: yellow; */
   background-image: url("./imgs/unit-current-bg.png");
   background-size: 100%;
 }
@@ -443,7 +410,6 @@
   bottom: -7.8%;
   left: 19%;
 }
-/* thief-unit block */
 
 .attack-button {
   /* width:122px
@@ -500,7 +466,6 @@
   background-position: 0 33.3%;
 }
 
-/* red cloud */
 .red-cloud {
   position: absolute;
   width: 100%;
@@ -511,7 +476,6 @@
   background-position: 50% 50%;
   transform: scaleY(0.41) translateY(91%);
   opacity: 0;
-  /* transition: transform 1s; */
 }
 
 .unit-image__red-cloud {
@@ -535,7 +499,6 @@
     opacity: 0;
   }
 }
-/* red cloud */
 
 @media screen and (max-width: 680px) {
   .player-level {
