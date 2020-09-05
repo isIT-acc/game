@@ -1,7 +1,4 @@
-/* game */
 .game {
-  /* width: 100%;
-  height: 100vh; */
   margin: 0;
   padding: 0;
 }
@@ -9,9 +6,6 @@
 .game_background_black {
   background-color: black;
 }
-/* game */
-
-/* game-field */
 
 .game-field {
   max-width: 680px;
@@ -66,22 +60,16 @@
   top: 0;
 }
 
-.game-field__env_positioned_left {
+.game-field__UI_positioned_left {
   position: absolute;
   top: 0;
   left: 0;
 }
-.game-field__env_positioned_right {
+.game-field__UI_positioned_right {
   position: absolute;
   top: 0;
   right: 0;
 }
-
-/* .game-field__border {
-  height: 100%;
-  width: 14.7%;
-  background-color: rgb(245, 7, 7);
-} */
 
 /* game-field */
 
@@ -104,17 +92,13 @@
   z-index: 99;
 }
 
-.left-player__hp-line {
+.left-player__head-hp-line {
   position: absolute;
   top: 36%;
   left: 29.5%;
 }
-/* .left-player__hp-line-text {
-  color: yellow;
-  position: absolute;
-  bottom: -3px;
-} */
-.left-player__hp-line-text_font {
+
+.left-player__head-hp-line-text_font {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
@@ -131,49 +115,47 @@
   left: -1.5%;
 }
 
-/* left-player */
-
-/* hp-line */
-.hp-line {
+/* head-hp-line */
+.head-hp-line {
   /* width: 146px;
   height: 14px; */
   width: 55%;
   height: 13.8%;
 }
-.hp-line_width_l {
+.head-hp-line_width_l {
   width: 62%;
 }
-.hp-line_width_m {
+.head-hp-line_width_m {
   width: 133px;
 }
-.hp-line_color_red {
+.head-hp-line_color_red {
   background-color: #8a0000;
 }
-.hp-line_form_left {
+.head-hp-line_form_left {
   border-bottom-right-radius: 50px;
 }
-.hp-line_form_right {
+.head-hp-line_form_right {
   border-bottom-left-radius: 50px;
 }
 
-.hp-line__text {
+.head-hp-line__text {
   color: yellow;
 }
-.hp-line__text_position_left {
+.head-hp-line__text_position_left {
   position: absolute;
   bottom: -15.5%;
   left: -1%;
 }
-.hp-line__text_position_right {
+.head-hp-line__text_position_right {
   position: absolute;
   right: 4%;
   bottom: -10.5%;
 }
-.hp-line__text_font_default {
+.head-hp-line__text_font_default {
   font-size: 14px;
 }
 
-/* hp-line */
+/* head-hp-line */
 
 /* player-bg */
 .player-bg {
@@ -237,7 +219,7 @@
   z-index: 99;
 }
 
-.right-player__hp-line {
+.right-player__head-hp-line {
   position: absolute;
   top: 34%;
   right: 28%;
@@ -245,8 +227,8 @@
 }
 .right-player__player-name {
   position: absolute;
-  top: 10%;
-  right: 4%;
+  top: 11%;
+  right: 0%;
 }
 
 /* right-player */
@@ -273,7 +255,7 @@
 /* lor */
 
 /* UI */
-.game-field__env {
+.game-field__UI {
   background-color: transparent;
   position: absolute;
   width: 100%;
@@ -281,7 +263,7 @@
   margin: auto;
   z-index: 101;
 }
-.game-field__env_font_default {
+.game-field__UI_font_default {
   font-family: Arial, Helvetica, sans-serif;
 }
 .border {
@@ -333,14 +315,6 @@
   /* to-red-zombie 1s, */
 }
 
-/* @keyframes to-red-zombie {
-  from {
-    background-image: url("./imgs/zombie.png");
-  }
-  to {
-    background-image: url("./imgs/zombie-rage.png");
-  }
-} */
 @keyframes bg-image-sit {
   from {
     background-position: 0 60%;
@@ -351,7 +325,6 @@
 }
 
 .unit-image_attacks {
-  /* background: yellow; */
   animation: zombie-attacks-frames 600ms steps(2);
 }
 .unit-image__shleves {
@@ -564,11 +537,11 @@
 }
 /* red cloud */
 
-/* @media screen and (max-width: 680px) {
+@media screen and (max-width: 680px) {
   .player-level {
     font-size: 1.7vw;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 2.1vw;
   }
   .player-name_font_default {
@@ -593,7 +566,7 @@
   .player-level {
     font-size: 0.7em;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 1em;
   }
   .player-name_font_default {
@@ -611,7 +584,7 @@
   .player-level {
     font-size: 1.7vw;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 2.1vw;
   }
   .player-name_font_default {
@@ -635,7 +608,7 @@
   .player-level {
     font-size: 0.7em;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 1em;
   }
   .player-name_font_default {
@@ -653,7 +626,7 @@
   .player-level {
     font-size: 1.7vw;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 2.1vw;
   }
   .player-name_font_default {
@@ -678,7 +651,7 @@
   .player-level {
     font-size: 0.7em;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 1em;
   }
   .player-name_font_default {
@@ -697,7 +670,7 @@
   .player-level {
     font-size: 1.7vw;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 2.1vw;
   }
   .player-name_font_default {
@@ -722,7 +695,7 @@
   .player-level {
     font-size: 0.7em;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 1em;
   }
   .player-name_font_default {
@@ -741,7 +714,7 @@
   .player-level {
     font-size: 1.7vw;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 2.1vw;
   }
   .player-name_font_default {
@@ -766,13 +739,15 @@
   .player-level {
     font-size: 0.7em;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 1em;
   }
   .player-name_font_default {
     font-size: 1.2em;
   }
-
+  .right-player__player-name {
+    right: 2%;
+  }
   .lor_font_default {
     font-size: 1.1em;
   }
@@ -785,13 +760,15 @@
   .player-level {
     font-size: 1.7vw;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 2.1vw;
   }
   .player-name_font_default {
     font-size: 2.2vw;
   }
-
+  .right-player__player-name {
+    right: 0%;
+  }
   .lor_font_default {
     font-size: 2.1vw;
   }
@@ -810,11 +787,14 @@
   .player-level {
     font-size: 0.7em;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 1em;
   }
   .player-name_font_default {
     font-size: 1.2em;
+  }
+  .right-player__player-name {
+    right: 2%;
   }
 
   .lor_font_default {
@@ -829,13 +809,15 @@
   .player-level {
     font-size: 1.7vw;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 2.1vw;
   }
   .player-name_font_default {
     font-size: 2.2vw;
   }
-
+  .right-player__player-name {
+    right: 0%;
+  }
   .lor_font_default {
     font-size: 2.1vw;
   }
@@ -854,13 +836,15 @@
   .player-level {
     font-size: 0.7em;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 1em;
   }
   .player-name_font_default {
     font-size: 1.2em;
   }
-
+  .right-player__player-name {
+    right: 4%;
+  }
   .lor_font_default {
     font-size: 1.1em;
   }
@@ -873,13 +857,15 @@
   .player-level {
     font-size: 1.7vw;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 2.1vw;
   }
   .player-name_font_default {
     font-size: 2.2vw;
   }
-
+  .right-player__player-name {
+    right: 0%;
+  }
   .lor_font_default {
     font-size: 2.1vw;
   }
@@ -898,13 +884,15 @@
   .player-level {
     font-size: 0.7em;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 1em;
   }
   .player-name_font_default {
     font-size: 1.2em;
   }
-
+  .right-player__player-name {
+    right: 4%;
+  }
   .lor_font_default {
     font-size: 1.1em;
   }
@@ -917,11 +905,14 @@
   .player-level {
     font-size: 1.7vw;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 2.1vw;
   }
   .player-name_font_default {
     font-size: 2.2vw;
+  }
+  .right-player__player-name {
+    right: 0%;
   }
 
   .lor_font_default {
@@ -942,11 +933,14 @@
   .player-level {
     font-size: 0.7em;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 1em;
   }
   .player-name_font_default {
     font-size: 1.2em;
+  }
+  .right-player__player-name {
+    right: 6%;
   }
 
   .lor_font_default {
@@ -961,13 +955,15 @@
   .player-level {
     font-size: 1.7vw;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 2.1vw;
   }
   .player-name_font_default {
     font-size: 2.2vw;
   }
-
+  .right-player__player-name {
+    right: 0%;
+  }
   .lor_font_default {
     font-size: 2.1vw;
   }
@@ -986,13 +982,15 @@
   .player-level {
     font-size: 0.7em;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 1em;
   }
   .player-name_font_default {
     font-size: 1.2em;
   }
-
+  .right-player__player-name {
+    right: 6%;
+  }
   .lor_font_default {
     font-size: 1.1em;
   }
@@ -1005,13 +1003,15 @@
   .player-level {
     font-size: 1.7vw;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 2.1vw;
   }
   .player-name_font_default {
     font-size: 2.2vw;
   }
-
+  .right-player__player-name {
+    right: 0%;
+  }
   .lor_font_default {
     font-size: 2.1vw;
   }
@@ -1030,13 +1030,15 @@
   .player-level {
     font-size: 0.7em;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 1em;
   }
   .player-name_font_default {
     font-size: 1.2em;
   }
-
+  .right-player__player-name {
+    right: 6%;
+  }
   .lor_font_default {
     font-size: 1.1em;
   }
@@ -1049,13 +1051,15 @@
   .player-level {
     font-size: 1.7vw;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 2.1vw;
   }
   .player-name_font_default {
     font-size: 2.2vw;
   }
-
+  .right-player__player-name {
+    right: 0%;
+  }
   .lor_font_default {
     font-size: 2.1vw;
   }
@@ -1074,13 +1078,15 @@
   .player-level {
     font-size: 0.7em;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 1em;
   }
   .player-name_font_default {
     font-size: 1.2em;
   }
-
+  .right-player__player-name {
+    right: 6%;
+  }
   .lor_font_default {
     font-size: 1.1em;
   }
@@ -1093,11 +1099,14 @@
   .player-level {
     font-size: 1.7vw;
   }
-  .hp-line__text_font_default {
+  .head-hp-line__text_font_default {
     font-size: 2.1vw;
   }
   .player-name_font_default {
     font-size: 2.2vw;
+  }
+  .right-player__player-name {
+    right: 0%;
   }
 
   .lor_font_default {
@@ -1106,4 +1115,4 @@
   .attack-button__hp-number_font_default {
     font-size: 2.2vw;
   }
-} */
+}
