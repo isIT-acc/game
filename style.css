@@ -77,11 +77,11 @@
   right: 0;
 }
 
-.game-field__border {
+/* .game-field__border {
   height: 100%;
   width: 14.7%;
   background-color: rgb(245, 7, 7);
-}
+} */
 
 /* game-field */
 
@@ -109,11 +109,11 @@
   top: 36%;
   left: 29.5%;
 }
-.left-player__hp-line-text {
+/* .left-player__hp-line-text {
   color: yellow;
   position: absolute;
   bottom: -3px;
-}
+} */
 .left-player__hp-line-text_font {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -245,8 +245,8 @@
 }
 .right-player__player-name {
   position: absolute;
-  top: 11%;
-  right: 0%;
+  top: 10%;
+  right: 4%;
 }
 
 /* right-player */
@@ -277,7 +277,7 @@
   background-color: transparent;
   position: absolute;
   width: 100%;
-  padding-top: 100%;
+  padding-top: 108%;
   margin: auto;
   z-index: 101;
 }
@@ -564,7 +564,7 @@
 }
 /* red cloud */
 
-@media screen and (max-width: 680px) {
+/* @media screen and (max-width: 680px) {
   .player-level {
     font-size: 1.7vw;
   }
@@ -1106,4 +1106,4 @@
   .attack-button__hp-number_font_default {
     font-size: 2.2vw;
   }
-}
+} */
