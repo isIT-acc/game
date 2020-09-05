@@ -1,7 +1,7 @@
 /* game */
 .game {
-  width: 100%;
-  height: 100vh;
+  /* width: 100%;
+  height: 100vh; */
   margin: 0;
   padding: 0;
 }
@@ -277,7 +277,7 @@
   background-color: transparent;
   position: absolute;
   width: 100%;
-  padding-top: 108%;
+  padding-top: 100%;
   margin: auto;
   z-index: 101;
 }
@@ -565,6 +565,531 @@
 /* red cloud */
 
 @media screen and (max-width: 680px) {
+  .player-level {
+    font-size: 1.7vw;
+  }
+  .hp-line__text_font_default {
+    font-size: 2.1vw;
+  }
+  .player-name_font_default {
+    font-size: 2.2vw;
+  }
+
+  .lor_font_default {
+    font-size: 2.1vw;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 2.2vw;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .game-field {
+    max-width: 643px;
+  }
+  .game {
+    font-size: 12px;
+  }
+  .player-level {
+    font-size: 0.7em;
+  }
+  .hp-line__text_font_default {
+    font-size: 1em;
+  }
+  .player-name_font_default {
+    font-size: 1.2em;
+  }
+
+  .lor_font_default {
+    font-size: 1.1em;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 643px) {
+  .player-level {
+    font-size: 1.7vw;
+  }
+  .hp-line__text_font_default {
+    font-size: 2.1vw;
+  }
+  .player-name_font_default {
+    font-size: 2.2vw;
+  }
+
+  .lor_font_default {
+    font-size: 2.1vw;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 2.2vw;
+  }
+}
+@media screen and (max-height: 660px) {
+  .game-field {
+    max-width: 606px;
+  }
+  .game {
+    font-size: 11.4px;
+  }
+  .player-level {
+    font-size: 0.7em;
+  }
+  .hp-line__text_font_default {
+    font-size: 1em;
+  }
+  .player-name_font_default {
+    font-size: 1.2em;
+  }
+
+  .lor_font_default {
+    font-size: 1.1em;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 606px) {
+  .player-level {
+    font-size: 1.7vw;
+  }
+  .hp-line__text_font_default {
+    font-size: 2.1vw;
+  }
+  .player-name_font_default {
+    font-size: 2.2vw;
+  }
+
+  .lor_font_default {
+    font-size: 2.1vw;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 2.2vw;
+  }
+}
+
+@media screen and (max-height: 620px) {
+  .game-field {
+    max-width: 570px;
+  }
+  .game {
+    font-size: 10.8px;
+  }
+  .player-level {
+    font-size: 0.7em;
+  }
+  .hp-line__text_font_default {
+    font-size: 1em;
+  }
+  .player-name_font_default {
+    font-size: 1.2em;
+  }
+
+  .lor_font_default {
+    font-size: 1.1em;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .player-level {
+    font-size: 1.7vw;
+  }
+  .hp-line__text_font_default {
+    font-size: 2.1vw;
+  }
+  .player-name_font_default {
+    font-size: 2.2vw;
+  }
+
+  .lor_font_default {
+    font-size: 2.1vw;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 2.2vw;
+  }
+}
+
+@media screen and (max-height: 580px) {
+  .game-field {
+    max-width: 533px;
+  }
+  .game {
+    font-size: 10.2px;
+  }
+  .player-level {
+    font-size: 0.7em;
+  }
+  .hp-line__text_font_default {
+    font-size: 1em;
+  }
+  .player-name_font_default {
+    font-size: 1.2em;
+  }
+
+  .lor_font_default {
+    font-size: 1.1em;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 533px) {
+  .player-level {
+    font-size: 1.7vw;
+  }
+  .hp-line__text_font_default {
+    font-size: 2.1vw;
+  }
+  .player-name_font_default {
+    font-size: 2.2vw;
+  }
+
+  .lor_font_default {
+    font-size: 2.1vw;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 2.2vw;
+  }
+}
+
+@media screen and (max-height: 540px) {
+  .game-field {
+    max-width: 496px;
+  }
+  .game {
+    font-size: 9.6px;
+  }
+  .player-level {
+    font-size: 0.7em;
+  }
+  .hp-line__text_font_default {
+    font-size: 1em;
+  }
+  .player-name_font_default {
+    font-size: 1.2em;
+  }
+
+  .lor_font_default {
+    font-size: 1.1em;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 496px) {
+  .player-level {
+    font-size: 1.7vw;
+  }
+  .hp-line__text_font_default {
+    font-size: 2.1vw;
+  }
+  .player-name_font_default {
+    font-size: 2.2vw;
+  }
+
+  .lor_font_default {
+    font-size: 2.1vw;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 2.2vw;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .game-field {
+    max-width: 459px;
+  }
+  .game {
+    font-size: 9px;
+  }
+  .player-level {
+    font-size: 0.7em;
+  }
+  .hp-line__text_font_default {
+    font-size: 1em;
+  }
+  .player-name_font_default {
+    font-size: 1.2em;
+  }
+
+  .lor_font_default {
+    font-size: 1.1em;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 459px) {
+  .player-level {
+    font-size: 1.7vw;
+  }
+  .hp-line__text_font_default {
+    font-size: 2.1vw;
+  }
+  .player-name_font_default {
+    font-size: 2.2vw;
+  }
+
+  .lor_font_default {
+    font-size: 2.1vw;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 2.2vw;
+  }
+}
+
+@media screen and (max-height: 460px) {
+  .game-field {
+    max-width: 422px;
+  }
+  .game {
+    font-size: 8.4px;
+  }
+  .player-level {
+    font-size: 0.7em;
+  }
+  .hp-line__text_font_default {
+    font-size: 1em;
+  }
+  .player-name_font_default {
+    font-size: 1.2em;
+  }
+
+  .lor_font_default {
+    font-size: 1.1em;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 422px) {
+  .player-level {
+    font-size: 1.7vw;
+  }
+  .hp-line__text_font_default {
+    font-size: 2.1vw;
+  }
+  .player-name_font_default {
+    font-size: 2.2vw;
+  }
+
+  .lor_font_default {
+    font-size: 2.1vw;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 2.2vw;
+  }
+}
+
+@media screen and (max-height: 420px) {
+  .game-field {
+    max-width: 386px;
+  }
+  .game {
+    font-size: 7.8px;
+  }
+  .player-level {
+    font-size: 0.7em;
+  }
+  .hp-line__text_font_default {
+    font-size: 1em;
+  }
+  .player-name_font_default {
+    font-size: 1.2em;
+  }
+
+  .lor_font_default {
+    font-size: 1.1em;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 386px) {
+  .player-level {
+    font-size: 1.7vw;
+  }
+  .hp-line__text_font_default {
+    font-size: 2.1vw;
+  }
+  .player-name_font_default {
+    font-size: 2.2vw;
+  }
+
+  .lor_font_default {
+    font-size: 2.1vw;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 2.2vw;
+  }
+}
+
+@media screen and (max-height: 380px) {
+  .game-field {
+    max-width: 349px;
+  }
+  .game {
+    font-size: 7.2px;
+  }
+  .player-level {
+    font-size: 0.7em;
+  }
+  .hp-line__text_font_default {
+    font-size: 1em;
+  }
+  .player-name_font_default {
+    font-size: 1.2em;
+  }
+
+  .lor_font_default {
+    font-size: 1.1em;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 349px) {
+  .player-level {
+    font-size: 1.7vw;
+  }
+  .hp-line__text_font_default {
+    font-size: 2.1vw;
+  }
+  .player-name_font_default {
+    font-size: 2.2vw;
+  }
+
+  .lor_font_default {
+    font-size: 2.1vw;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 2.2vw;
+  }
+}
+
+@media screen and (max-height: 340px) {
+  .game-field {
+    max-width: 312px;
+  }
+  .game {
+    font-size: 6.6px;
+  }
+  .player-level {
+    font-size: 0.7em;
+  }
+  .hp-line__text_font_default {
+    font-size: 1em;
+  }
+  .player-name_font_default {
+    font-size: 1.2em;
+  }
+
+  .lor_font_default {
+    font-size: 1.1em;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 312px) {
+  .player-level {
+    font-size: 1.7vw;
+  }
+  .hp-line__text_font_default {
+    font-size: 2.1vw;
+  }
+  .player-name_font_default {
+    font-size: 2.2vw;
+  }
+
+  .lor_font_default {
+    font-size: 2.1vw;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 2.2vw;
+  }
+}
+
+@media screen and (max-height: 300px) {
+  .game-field {
+    max-width: 276px;
+  }
+  .game {
+    font-size: 6px;
+  }
+  .player-level {
+    font-size: 0.7em;
+  }
+  .hp-line__text_font_default {
+    font-size: 1em;
+  }
+  .player-name_font_default {
+    font-size: 1.2em;
+  }
+
+  .lor_font_default {
+    font-size: 1.1em;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 276px) {
+  .player-level {
+    font-size: 1.7vw;
+  }
+  .hp-line__text_font_default {
+    font-size: 2.1vw;
+  }
+  .player-name_font_default {
+    font-size: 2.2vw;
+  }
+
+  .lor_font_default {
+    font-size: 2.1vw;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 2.2vw;
+  }
+}
+
+@media screen and (max-height: 260px) {
+  .game-field {
+    max-width: 238px;
+  }
+  .game {
+    font-size: 5.4px;
+  }
+  .player-level {
+    font-size: 0.7em;
+  }
+  .hp-line__text_font_default {
+    font-size: 1em;
+  }
+  .player-name_font_default {
+    font-size: 1.2em;
+  }
+
+  .lor_font_default {
+    font-size: 1.1em;
+  }
+  .attack-button__hp-number_font_default {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 238px) {
   .player-level {
     font-size: 1.7vw;
   }
